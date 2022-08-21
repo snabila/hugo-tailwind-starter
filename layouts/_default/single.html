@@ -1,0 +1,12 @@
+{{ define "main" }}
+<div class="mb-4">
+  <h2 class="text-2xl font-bold mb-2">{{ .Title }}</h2>
+
+  <span>{{ .Date.Format "January 2, 2006" }}</span>
+</div>
+
+{{ if .Params.image }}
+<img src="{{ .Params.image }}" />
+{{ end }}
+<div class="single">{{ .Content }}</div>
+{{ end }}

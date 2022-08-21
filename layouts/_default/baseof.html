@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    {{ partial "head.html" . }}
+  </head>
+  <body>
+    <div class="bg-neutral-100 min-h-screen">
+      <div class="max-w-3xl py-8 px-4 mx-auto">
+        {{ partial "header.html" . }} {{ block "main" . }}
+        <!-- The part of the page that begins to differ between templates -->
+        {{ end }} {{ partial "footer.html" . }}
+      </div>
+    </div>
+  </body>
+</html>

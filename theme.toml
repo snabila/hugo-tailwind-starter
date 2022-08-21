@@ -1,0 +1,10 @@
+name = "Hugo Tailwind Simple Starter"
+license = "MIT"
+licenselink = "https://github.com/snabila/hugo-tailwind-starter/blob/master/LICENSE"
+description = "A simple starter to build a Hugo theme with Tailwind CSS"
+homepage = "https://github.com/snabila/hugo-tailwind-starter"
+tags = ["tailwind", "starter", "simple"]
+
+[author]
+  name = "Salsanabilah"
+  homepage = "https://github.com/snabila"

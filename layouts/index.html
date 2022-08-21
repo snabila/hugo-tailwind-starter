@@ -1,0 +1,28 @@
+{{ define "main" }}
+
+<div class="mb-12">
+  <h2 class="text-2xl font-bold mb-6">Recent Posts</h2>
+  <!-- <hr class="border-2 border-black mb-2" /> -->
+  {{ range first 5 .Site.RegularPages }}
+  <article class="mb-6">
+    <h3 class="text-xl font-semibold mb-1">
+      <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+    </h3>
+    <p>{{ .Date.Format "January 2, 2006" }}</p>
+  </article>
+  {{ end }}
+</div>
+
+<div>
+  <h2 class="text-2xl font-semibold mb-6">About Me</h2>
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
+    tincidunt odio sed volutpat sodales. Nam ac lectus at lacus aliquet porta ut
+    sed massa. Mauris ut mauris a arcu facilisis ullamcorper. Lorem ipsum dolor
+    sit amet, consectetur adipiscing elit. Curabitur elit sem, lobortis accumsan
+    ornare sed, pellentesque sed est. Integer luctus vehicula feugiat. Nam at
+    nisl luctus, luctus erat ut, dapibus erat.
+  </p>
+</div>
+
+{{ end }}
